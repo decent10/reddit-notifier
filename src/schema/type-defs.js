@@ -13,10 +13,18 @@ const typeDefs = gql`
     email: String!
     favorites: [String]
     subscribe: Boolean
+    redditPosts: [RedditPost]
   }
   type Channel {
     id: Int
     name: String
+  }
+  type RedditPost {
+    title: String
+    image: String
+    url: String
+    subReddit: String
+    votes: String
   }
 
   # The "Query" type is special: it lists all of the available queries that
