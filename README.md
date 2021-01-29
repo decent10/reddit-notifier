@@ -13,22 +13,37 @@ sub-reddit channels.
 
 ## Tasks
 Build a service that handles:
- * Creating and updating users
- * Adding, and updating a user's favorite subreddits
- * Sending out an email to each user at 8am, containing the top posts of each of their favorite subreddits
- * Turning on and off the newsletter send out for a specific user
+ ✅ Creating and updating users
+ ✅ Adding, and updating a user's favorite subreddits
+ ✅ Sending out an email to each user at 8am, containing the top posts of each of their favorite subreddits
+ ✅ Turning on and off the newsletter send out for a specific user
 
 
 ## Running
 
 ``` shell
+
 yarn install
 yarn dev
+
 ```
 
-Run the tests:
+
+## build
+
+``` shell
+yarn bundle
+yarn dev
+
+```
 
 
 
+## Running in production
+
+``` shell
+yarn start
+
+```
 
 

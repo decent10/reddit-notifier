@@ -20,14 +20,10 @@ export const sendTransactionalEmail = async (
       ],
     };
     let res = await sendgrid.send(msg);
-    console.log(res);
     return "succuss";
   } catch (error) {
     console.log(error);
   }
 };
 
-export default (root, args) => {
-  console.log(args);
-  return sendTransactionalEmail(args.email);
-};
+export default (root, args) => sendTransactionalEmail(args.email);

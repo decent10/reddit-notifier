@@ -23,7 +23,6 @@ export const sendTransactionalEmail = async (data) => {
       ],
     };
     let res = await sendgrid.send(msg);
-    console.log(res);
     return "succuss";
   } catch (error) {
     console.log(error);
@@ -77,8 +76,8 @@ const prepareUserData = async (user) => {
 };
 
 export const scheduleEmail = () => {
-  //cron.schedule("00 8 * * *", () => {
-  let users = USERS.filter((user) => user.subscribe);
-  users.map((user) => prepareUserData(user));
-  // });
+  cron.schedule("00 8 * * *", () => {
+    let users = USERS.filter((user) => user.subscribe);
+    users.map((user) => prepareUserData(user));
+  });
 };
