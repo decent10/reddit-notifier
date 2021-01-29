@@ -26,6 +26,9 @@ const typeDefs = gql`
     subReddit: String
     votes: String
   }
+  type Email {
+    succuss: String
+  }
 
   # The "Query" type is special: it lists all of the available queries that
   # clients can execute, along with the return type for each. In this
@@ -34,6 +37,7 @@ const typeDefs = gql`
     users: [User]
     user(id: Int): User
   }
+
   type Mutation {
     creatUpdateUser(
       id: ID
@@ -45,6 +49,7 @@ const typeDefs = gql`
     removeFavorite(userId: ID!, favorite: String!): User
     subscribe(userId: ID!): User
     unSubscribe(userId: ID!): User
+    sendEmail(email: String): Email
   }
 `;
 

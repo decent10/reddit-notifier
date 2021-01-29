@@ -3,26 +3,26 @@ export let USERS = [
     id: 1,
     name: "Amogh Mehƌam",
     email: "decent10cs@gmail.com",
-    favorites: ["Politics", "Technology", "Memes"],
+    favorites: ["images", "Funny", "Memes"],
     subscribe: true,
     createdAt: new Date(),
   },
-  {
-    id: 2,
-    name: "Rashid 12 Ahmad",
-    email: "decent10cs@gmail.com",
-    favorites: ["Movies", "Technology", "Programming"],
-    subscribe: true,
-    createdAt: new Date(),
-  },
-  {
-    id: 3,
-    name: "Rashid Ahmad",
-    email: "decent10cs@gmail.com",
-    favorites: ["Movies", "Technology", "Programming"],
-    subscribe: true,
-    createdAt: new Date(),
-  },
+  // {
+  //   id: 2,
+  //   name: "Rashid 12 Ahmad",
+  //   email: "decent10cs@gmail.com",
+  //   favorites: ["Movies", "Technology", "Programming"],
+  //   subscribe: true,
+  //   createdAt: new Date(),
+  // },
+  // {
+  //   id: 3,
+  //   name: "Rashid Ahmad",
+  //   email: "decent10cs@gmail.com",
+  //   favorites: ["Movies", "Technology", "Programming"],
+  //   subscribe: true,
+  //   createdAt: new Date(),
+  // },
 ];
 
 const removeItem = (arr, value) => {

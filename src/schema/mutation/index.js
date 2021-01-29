@@ -3,6 +3,7 @@ import addFavorites from "./add-favorites";
 import removeFavorite from "./remove-favorite";
 import subscribe from "./news-letter-subscribe";
 import unSubscribe from "./news-letter-unsubscribe";
+import sendEmail from "./send-email";
 
 const Mutation = {
   creatUpdateUser,
@@ -10,5 +11,6 @@ const Mutation = {
   removeFavorite,
   unSubscribe,
   subscribe,
+  sendEmail,
 };
 export default Mutation;
