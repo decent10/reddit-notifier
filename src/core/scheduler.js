@@ -9,6 +9,7 @@ export const sendTransactionalEmail = async (data) => {
   try {
     const msg = {
       from: "decent10cs@gmail.com",
+      subject: "Reddit top posts for yesterday",
       template_id: "d-ff86fcb07714452f919061a2b367b42a",
       personalizations: [
         {
